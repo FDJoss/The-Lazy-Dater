@@ -4,10 +4,10 @@ function getRecipeApi() {
 var requestUrl ='https://www.thecocktaildb.com/api/json/v1/1/random.php'
 fetch(requestUrl)
     .then(function (response) {
-        console.log(response.json())
+       return(response.json())
     }).then(function (data) {
        var randomCocktail = data.drinks[0].strDrink
-       console.log(randomCocktail)
+       console.log(randomCocktail);
     }
     )
 }
@@ -15,5 +15,4 @@ fetch(requestUrl)
 btn.addEventListener("click", function (event) {
     event.preventDefault()
     getRecipeApi()
-    console.log(btn)
 })
