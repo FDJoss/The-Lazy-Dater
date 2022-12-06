@@ -20,19 +20,19 @@ header h1 {
     font-size: 50px;
     background-color: #E63462;
     
-    margin-bottom: 30%
+    
     
 }
 
 button {
-font-size: x-large;
-padding: 55px 55px ;
-margin-left: 40%;
-margin-bottom: 30px;
-align-items: center;
-box-shadow: #2db554;
-color: #000000;
-background-color: #d32af9
+    font-size: x-large;
+    padding: 55px 55px;
+    margin-left: 40%;
+    margin-bottom: 30px;
+    align-items: center;
+    box-shadow: #2db554;
+    color: #000000;
+    background-color: #d32af9
 }
 
   
