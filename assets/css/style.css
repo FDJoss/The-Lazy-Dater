@@ -10,34 +10,44 @@ body{
 }
 
 header h1 {
-    padding: 5px 2% 5px 30%;
+    padding: 5px 35%;
     margin: 0;
-    font-size: 4vw;
-    line-height: 3;
+    font-size: 3vw;
+    line-height: 2;
   }
   header h3{
     padding: 2%;
-    font-size: 50px;
+    font-size: 26px;
     background-color: #E63462;
+    margin-top: 5px;
     
-    margin-bottom: 30%
+    
+}
+
+button{
+font-size: 15px;
+padding: 15px 55px ;
+margin-left: 40%;
+align-items: center;
+margin-top:250px;
+box-shadow: #2db554;
+color: #000000;
+background-color: #d32af9 
+    
     
 }
 
 button {
-font-size: x-large;
-padding: 55px 55px ;
-margin-left: 40%;
-margin-bottom: 30px;
-align-items: center;
-box-shadow: #2db554;
-color: #000000;
-background-color: #d32af9
+    font-size: x-large;
+    padding: 55px 55px;
+    margin-left: 40%;
+    margin-bottom: 30px;
+    align-items: center;
+    box-shadow: #2db554;
+    color: #000000;
+    background-color: #d32af9
+main
 }
-
-  
-   
-    
 
 
 h1 {

@@ -1,13 +1,12 @@
-var btn = document.querySelector("#date-button");
 
 function getRecipeApi() {
 var requestUrl ='https://www.thecocktaildb.com/api/json/v1/1/random.php'
 fetch(requestUrl)
     .then(function (response) {
-       return(response.json())
+        console.log(response.json())
     }).then(function (data) {
        var randomCocktail = data.drinks[0].strDrink
-       console.log(randomCocktail);
+       console.log(randomCocktail)
     }
     )
 }
