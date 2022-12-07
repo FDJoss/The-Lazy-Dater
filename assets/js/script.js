@@ -49,7 +49,7 @@ function displayCocktailResults(cocktail) {
 
     cocktailIngredientsEl.innerHTML = ""
 
-    for (var i = 1; i < 15; i++) {
+    for (var i = 1; i <= 15; i++) {
         var p = document.createElement("p");
         var ingredient = "strIngredient" + i
         var measure = "strMeasure" + i
