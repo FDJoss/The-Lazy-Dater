@@ -1,6 +1,7 @@
 var btn = document.getElementById("date-button");
 var alcoholListEl = document.getElementById("alcohol-list");
 var cocktailNameEl = document.getElementById("cocktail-name");
+var cocktailIngredientsEl = document.getElementById("cocktail-ingredients")
 var cocktailRecipeEl = document.getElementById("cocktail-recipe");
 var cocktailPictureEl = document.getElementById("cocktail-picture");
 
@@ -13,9 +14,9 @@ function getRecipeApi(alcohol) {
             return response.json();
         }).then(function (data) {
             console.log(data)
-            var randomCocktail = data.drinks[Math.floor(Math.random()*data.drinks.length)];
+            var randomCocktail = data.drinks[Math.floor(Math.random() * data.drinks.length)];
             console.log("random cocktail", randomCocktail)
-            getCocktailDetails(data.drinks[0].idDrink);
+            getCocktailDetails(randomCocktail.idDrink);
         })
 };
 
@@ -37,7 +38,7 @@ function getCocktailDetails(id) {
         })
 };
 
-function displayCocktailResults(cocktail){
+function displayCocktailResults(cocktail) {
     var drinkName = cocktail.strDrink
     // var ingredients and measurements = cocktail.strIngredient
     var recipe = cocktail.strInstructions
@@ -45,5 +46,22 @@ function displayCocktailResults(cocktail){
     cocktailNameEl.textContent = drinkName
     cocktailRecipeEl.textContent = recipe
     cocktailPictureEl.src = picture
-    console.log(drinkName,recipe,picture)
+
+    cocktailIngredientsEl.innerHTML = ""
+
+    for (var i = 1; i < 15; i++) {
+        var p = document.createElement("p");
+        var ingredient = "strIngredient" + i
+        var measure = "strMeasure" + i
+        if (cocktail[ingredient] !== null && cocktail[measure] !== null) {
+            p.textContent = cocktail[ingredient] + " " + cocktail[measure]
+            cocktailIngredientsEl.append(p)
+        } else if (cocktail[ingredient] !== null) {
+            p.textContent = cocktail[ingredient]
+            cocktailIngredientsEl.append(p) 
+        }
+        else {
+            return;
+        }
+    }
 };
