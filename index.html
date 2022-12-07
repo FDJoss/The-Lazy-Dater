@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Lazy Date</title>
-    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 
 
 </head>
@@ -20,22 +21,28 @@
             Let our random Date Night generator pick options for the "Lazy Dater" to find
             something for you to do!
         </h3>
+    </header>
         <form id="search-form" class="form w-100">
             <select id="alcohol-list" class="form-input w-100">
-              <option value="" disabled selected>Select your alcohol...</option>
-              <option value="Gin">Gin</option>
-              <option value="Rum">Rum</option>
-              <option value="Bourbon">Bourbon</option>
-              <option value="Tequila">Tequila</option>
-              <option value="Vodka">Vodka</option>
-              <option value="Scotch">Scotch</option>
-              <option value="Whiskey">Whiskey</option>
+                <option value="" disabled selected>Select your alcohol...</option>
+                <option value="Gin">Gin</option>
+                <option value="Rum">Rum</option>
+                <option value="Bourbon">Bourbon</option>
+                <option value="Tequila">Tequila</option>
+                <option value="Vodka">Vodka</option>
+                <option value="Scotch">Scotch</option>
+                <option value="Whiskey">Whiskey</option>
             </select>
-          </form>
+        </form>
         <form>
             <button id="date-button">DATE NIGHT</button>
         </form>
-    </header>
+        <body>
+            <div id="cocktail-name"></div>
+            <div id="cocktail-recipe"></div>
+            <img id="cocktail-picture">
+        </body>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

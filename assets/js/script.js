@@ -1,5 +1,8 @@
 var btn = document.getElementById("date-button");
 var alcoholListEl = document.getElementById("alcohol-list");
+var cocktailNameEl = document.getElementById("cocktail-name");
+var cocktailRecipeEl = document.getElementById("cocktail-recipe");
+var cocktailPictureEl = document.getElementById("cocktail-picture");
 
 
 function getRecipeApi(alcohol) {
@@ -38,6 +41,9 @@ function displayCocktailResults(cocktail){
     var drinkName = cocktail.strDrink
     // var ingredients and measurements = cocktail.strIngredient
     var recipe = cocktail.strInstructions
-    var picture = cocktail.strImageSource
+    var picture = cocktail.strDrinkThumb
+    cocktailNameEl.textContent = drinkName
+    cocktailRecipeEl.textContent = recipe
+    cocktailPictureEl.src = picture
     console.log(drinkName,recipe,picture)
 };
