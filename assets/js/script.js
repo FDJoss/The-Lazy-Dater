@@ -39,6 +39,7 @@ function getCocktailDetails(id) {
 };
 
 function displayCocktailResults(cocktail) {
+    saveCocktailsToStorage(cocktail);
     var drinkName = cocktail.strDrink
     // var ingredients and measurements = cocktail.strIngredient
     var recipe = cocktail.strInstructions
@@ -65,3 +66,10 @@ function displayCocktailResults(cocktail) {
         }
     }
 };
+
+function saveCocktailsToStorage(cocktail) {
+    var cocktailList = (JSON.parse(localStorage.getItem("cocktail-details")) || []).slice(0,10);
+    console.log(cocktail);
+    cocktailList.unshift(cocktail);
+    localStorage.setItem("cocktail-details", JSON.stringify(cocktailList));
+    };
