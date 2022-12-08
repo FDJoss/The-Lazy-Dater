@@ -1,6 +1,6 @@
 function saveDate() {
     var date = dateEl.value.trim();
-  
+
     if (date !== '') {
       var dates =
         JSON.parse(window.localStorage.getItem('Dates')) || [];
@@ -13,6 +13,7 @@ function saveDate() {
       date.push(newDate);
       window.localStorage.setItem('Dates', JSON.stringify(dates));
   
-      window.location.href = 'search-results.html';
+      window.location.href = 'index.html';
     }
   }
+
