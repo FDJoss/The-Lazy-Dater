@@ -25,29 +25,28 @@ header h1 {
 }
 
 button{
-font-size: 15px;
+    font-size: 15px;
 padding: 15px 55px ;
-margin-left: 40%;
-align-items: center;
-margin-top:250px;
 box-shadow: #2db554;
 color: #000000;
 background-color: #d32af9 
-    
-    
+
+ 
+
 }
 
-button {
-    font-size: x-large;
-    padding: 55px 55px;
-    margin-left: 40%;
-    margin-bottom: 30px;
-    align-items: center;
-    box-shadow: #2db554;
-    color: #000000;
-    background-color: #d32af9
-main
+#movie-genres{
+    
+
 }
+
+
+
+    
+    
+
+
+
 
 
 h1 {
@@ -57,3 +56,7 @@ h1 {
     background-color: var(--magenta)
     }
 
+
+
+
+ 
