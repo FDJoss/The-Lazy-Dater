@@ -22,6 +22,7 @@
         <h1>The Lazy Dater</h1>
         <h3>Are you looking to impress your date with a cozy night in but tired of spending mental energy making decisions? Click our date night button to receive a randomly selected cocktail and movie based off of your alcohol and movie genre preferences that are guaranteed to bring your date back again and again.
         </h3>
+
     </header>
     <section class="container">
         <div class="row">
@@ -53,13 +54,25 @@
                     <form id="search-form" class="form w-100">
                         <select id="genre-list" class="form-input w-100">
                             <option value="" disabled selected>Select a Movie Genre...</option>
-                            <option value="action">Action</option>
-                            <option value="adventure">Adventure</option>
-                            <option value="comedy">Comedy</option>
-                            <option value="documentary">Documentary</option>
-                            <option value="drama">Drama</option>
-                            <option value="horror">Horror</option>
-                            <option value="science-fiction">Science FIction</option>
+                            <option value="id">Action</option>
+                            <option value="12">Adventure</option>
+                            <option value="16">Animation</option>
+                            <option value="35">Comedy</option>
+                            <option value="80">Crime</option>
+                            <option value="99">Documentary</option>
+                            <option value="18">Drama</option>
+                            <option value="10751">Family</option>
+                            <option value="14">Fantasy</option>
+                            <option value="36">History</option>
+                            <option value="27">Horror</option>
+                            <option value="10402">Music</option>
+                            <option value="9648">Mystery</option>
+                            <option value="10749">Romance</option>
+                            <option value="878">Science Fiction</option>
+                            <option value="10770">TV Movie</option>
+                            <option value="53">Thriller</option>
+                            <option value="10752">War</option>
+                            <option value="37">Western</option>
                         </select>
                     </form>
                 </div>
@@ -80,6 +93,21 @@
         <div id="cocktail-recipe"></div>
         <img id="cocktail-picture">
     </section>
+
+        
+        <body>
+            <div id="cocktail-name"></div>
+            <div id="cocktail-ingredients"></div>
+            <div id="cocktail-recipe"></div>
+            <img id="cocktail-picture">
+        </body>
+        <body>
+            <div id="movie-name"></div>
+            <div id="movie-date"></div>
+            <div id="movie-overview"></div>
+            <img id="movie-poster">
+        </body>
+    <script src="./assets/js/movie.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
