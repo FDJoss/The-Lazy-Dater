@@ -8,7 +8,9 @@ var moviePosterEl = document.getElementById("movie-poster");
 
 
 function getMovie(genre) {
-    var movieListUrl = 'https://api.themoviedb.org/3/discover/movie?api_key=' + tmdbApiKey + '&with_genres=' + genre + '&language=en-US&include_adult=false&with_original_language=en'
+    var randPage = Math.floor(Math.random() * 30) + 1
+    console.log('Page: ' + randPage)
+    var movieListUrl = 'https://api.themoviedb.org/3/discover/movie?api_key=' + tmdbApiKey + '&with_genres=' + genre + '&language=en-US&include_adult=false&with_original_language=en&page=' + randPage
     fetch (movieListUrl)
         .then(function (response) {
             return response.json();
