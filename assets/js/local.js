@@ -16,4 +16,7 @@ function saveDate() {
       window.location.href = 'index.html';
     }
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3f0c07d05b40b001cc04da9e9706a28d547cf1b2
