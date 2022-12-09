@@ -87,5 +87,17 @@ button{
 
 
 
+#cocktail-name{
+    color: var(--teal);
+    font-size: 30px;
+}
 
+#movie-name{
+    color: var(--teal);
+    font-size: 30px;
+}
+
+#cocktail-ingredients{
+    display:inline-block
+}
  

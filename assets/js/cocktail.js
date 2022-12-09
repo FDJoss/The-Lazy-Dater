@@ -54,15 +54,15 @@ function displayCocktailResults(cocktail) {
     cocktailIngredientsEl.innerHTML = ""
 
     for (var i = 1; i <= 15; i++) {
-        var p = document.createElement("p");
+        var ul = document.createElement("ul");
         var ingredient = "strIngredient" + i
         var measure = "strMeasure" + i
         if (cocktail[ingredient] !== null && cocktail[measure] !== null) {
-            p.textContent = cocktail[ingredient] + " " + cocktail[measure]
-            cocktailIngredientsEl.append(p)
+            ul.textContent = cocktail[ingredient] + "-" + cocktail[measure]
+            cocktailIngredientsEl.append(ul)
         } else if (cocktail[ingredient] !== null) {
-            p.textContent = cocktail[ingredient]
-            cocktailIngredientsEl.append(p) 
+            ul.textContent = cocktail[ingredient]
+            cocktailIngredientsEl.append(ul) 
         }
         else {
             return;
