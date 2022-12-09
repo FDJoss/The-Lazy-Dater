@@ -1,4 +1,29 @@
-#search-h1{
-    color: rgb(0, 38, 255);
-    background-color: #04D4f0
+:root{
+    --teal: #059DC0;
+    --white: #f1f1f1;
+    --cyan: #04ECF0;
+    --blue: #04D4F0;
 }
+
+body{
+    background-color: var(--blue)
+}
+
+a {
+    color: var(--white);
+}
+
+h1 {
+    margin: 0;
+    font-family: 'shrikhand';
+    color: var(--white);
+    background-color: var(--teal)
+    }
+
+header h1 {
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+    line-height: 2;
+  }
