@@ -40,6 +40,7 @@ function getMovieDetails(movieId) {
 };
 
 function displayMovieResults(movie) {
+    saveMoviesToStorage(movie);
     var movieName = movie.title
     var movieDate = movie.release_date
     var movieOverview = movie.overview
@@ -49,3 +50,10 @@ function displayMovieResults(movie) {
     moviePosterEl.src = picture
     movieOverviewEl.textContent = movieOverview
 };
+
+function saveMoviesToStorage(movie) {
+    var movieList = (JSON.parse(localStorage.getItem("movie-details")) || []).slice(0,10);
+    console.log(movie);
+    movieList.unshift(movie);
+    localStorage.setItem("movie-details", JSON.stringify(movieList));
+    };
