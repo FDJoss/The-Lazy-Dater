@@ -16,7 +16,7 @@ var movieEl = document.getElementById("movies");
 function loadMovie(){
     for (var i=0; i < movieDetails.length; i++) {
         var item=document.createElement("li");
-        item.textContent=movieDetails[i].title;
+        item.textContent=movieDetails[i].title  + ' (' + movieDetails[i].release_date + ')';
         movieEl.appendChild(item);
     }
 }
