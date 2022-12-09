@@ -1,60 +1,46 @@
 
 :root{
-    --magenta: #8F2D56;
+    --teal: #059DC0;
     --white: #f1f1f1;
-    
-
+    --cyan: #04ECF0;
+    --blue: #04D4F0;
 }
+
 body{
-    background-color: #D81159;
+    background-color: var(--blue)
 }
 
-header h1 {
-    padding: 5px 35%;
-    margin: 0;
-    font-size: 3vw;
-    line-height: 2;
-  }
-  header h3{
-    padding: 2%;
-    font-size: 26px;
-    background-color: #E63462;
-    margin-top: 5px;
-    
-    
+a {
+    color: var(--white);
 }
-
-button{
-    font-size: 15px;
-padding: 15px 55px ;
-box-shadow: #2db554;
-color: #000000;
-background-color: #d32af9 
-
- 
-
-}
-
-#movie-genres{
-    
-
-}
-
-
-
-    
-    
-
-
-
-
 
 h1 {
     margin: 0%;
     font-family: 'shrikhand';
     color: var(--white);
-    background-color: var(--magenta)
+    background-color: var(--teal)
     }
+
+header h1 {
+    padding: 5px 35%;
+    margin: 0;
+    font-size: 50px;
+    line-height: 2;
+  }
+  
+  header h3{
+    padding: 2%;
+    font-size: 26px;
+    background-color: var(--cyan);
+    margin-top: 5px;
+}
+
+button{
+    font-size: 15px;
+    padding: 15px 55px ;
+    color: var(--white);
+    background-color: var(--teal);
+}
 
 
 
