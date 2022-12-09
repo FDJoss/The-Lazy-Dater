@@ -5,16 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style2.css">
     <title>Have a Great Date!!</title>
 </head>
-    <body>
-        <div id="past-suggestions"></div>
-        <h1 class="d-flex justify-content-center" id="search-h1">View your previous suggestions below</h1>
+ <body>
+    <header>
+        <h1>Your Date Night History</h1>
+    </header>
+    <div class="row">
+     <div class="col-sm-6">
+        <div class="card">
+         <div class="card-body">
+              <h5 class="card-title">Cocktails🍹</h5>
             <ul class="list-group-item list-unstyled my-3" id="cocktails"></ul>
-            <ul class="list-group-item list-unstyled my-3"  id="movies"></ul>
-          <a href="index.html"><button type="button">Go Back</button></a>
         </div>
+         </div>
+        </div><div class="col-sm-6">
+            <div class="card">
+               <div class="card-body">
+                 <h5 class="card-title">Movies🍿</h5>
+            <ul class="list-group-item list-unstyled my-3"  id="movies"></ul></div>
+            </div>
+        </div>
+          <a href="index.html"><button type="button" class="btn btn-primary">Go Back</button></a>
     <script src="./assets/js/search-results.js"></script>
     <script src="./assets/js/movie.js"></script>
 </body>
