@@ -18,7 +18,9 @@
     <header>
         <a href="search-results.html">View Previous Suggestions</a></div>
         <h1>The Lazy Dater</h1>
-        <h3>Are you looking to impress your date with a cozy night in but tired of spending mental energy making decisions? Click our date night button to receive a randomly selected cocktail and movie based off of your alcohol and movie genre preferences that are guaranteed to bring your date back again and again.
+        <h3>Are you looking to impress your date with a cozy night in but tired of spending mental energy making
+            decisions? Click our date night button to receive a randomly selected cocktail and movie based off of your
+            alcohol and movie genre preferences that are guaranteed to bring your date back again and again.
         </h3>
     </header>
 
@@ -41,8 +43,8 @@
                 </div>
             </div>
 
-            <div class="col-md-4 my-2 d-flex justify-content-center align-items-center"> 
-                    <button id="date-button" class="">DATE NIGHT</button>
+            <div class="col-md-4 my-2 d-flex justify-content-center align-items-center">
+                <button id="date-button" class="">DATE NIGHT</button>
             </div>
 
             <div class="col-md-4 my-2">
@@ -74,21 +76,28 @@
                 </div>
             </div>
         </div>
+        <div id='result-wrapper' class="result-wrapper d-none">
+            <div class="result-cocktail">
+                <div class="result-description">
+
+                    <div id="cocktail-name"></div>
+                    <div id="cocktail-ingredients"></div>
+                    <div id="cocktail-recipe"></div>
+                </div>
+                <img id="cocktail-picture">
+            </div>
+
+            <div class="result-movie">
+                <div class="result-description">
+                    <div id="movie-name"></div>
+                    <div id="movie-date"></div>
+                    <div id="movie-overview"></div>
+                </div>
+                <img id="movie-poster">
+            </div>
+        </div>
     </div>
 
-        <div>
-            <div id="cocktail-name"></div>
-            <div id="cocktail-ingredients"></div>
-            <div id="cocktail-recipe"></div>
-            <img id="cocktail-picture">
-        </div>
-
-        <div>
-            <div id="movie-name"></div>
-            <div id="movie-date"></div>
-            <div id="movie-overview"></div>
-            <img id="movie-poster">
-        </div>
 
     <script src="./assets/js/movie.js"></script>
     <script src="./assets/js/cocktail.js"></script>

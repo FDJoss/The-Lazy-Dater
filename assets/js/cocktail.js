@@ -4,6 +4,7 @@ var cocktailNameEl = document.getElementById("cocktail-name");
 var cocktailIngredientsEl = document.getElementById("cocktail-ingredients")
 var cocktailRecipeEl = document.getElementById("cocktail-recipe");
 var cocktailPictureEl = document.getElementById("cocktail-picture");
+var resultWrapperEl = document.getElementById('result-wrapper');
 
 
 function getRecipeApi(alcohol) {
@@ -24,6 +25,7 @@ btn.addEventListener("click", function (event) {
     var selectedAlcohol = alcoholListEl.value;
     event.preventDefault()
     getRecipeApi(selectedAlcohol)
+    
     // console.log(selectedAlcohol);
 });
 
@@ -35,6 +37,7 @@ function getCocktailDetails(id) {
         }).then(function (data) {
             console.log(data.drinks[0])
             displayCocktailResults(data.drinks[0])
+            resultWrapperEl.setAttribute('class', 'result-wrapper')
         })
 };
 
